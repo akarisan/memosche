@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex">
+        <title>めもすけ</title>
+        <link rel="stylesheet" href="../css/beauter.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="jumbo _indigo">
+                <h1 onclick="document.location.href='../';">MemoSche</h1>
+            </div>
+            <div class="tab _hide-mobile _hide-phablet" style="display: flex;">
+                <button style="flex: 1;" class="tablinks" onclick="opentab('tab1')">メモしたイベント</button>
+                <button style="flex: 1;" class="tablinks" onclick="opentab('tab2')">全てのイベント</button>
+            </div>
+        </header>
+        
+
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="li-title">
+                        2020-1-1<br>
+                        <small>テストイベント</small>
+                        <p>参加費　¥ 500-1000</p>
+                    </div>
+                    <div class="li-link"><a href="#">メモ</a></div>
+                </li>
+                <li class="selected">
+                    <div class="li-title">
+                        2020-1-1<br>
+                        <small>テストイベント</small>
+                        <p>参加費　¥ 500-1000</p>
+                    </div>
+                    <div class="li-link"><a href="#">メモ</a></div>
+                </li>
+                <li>
+                    <div class="li-title">
+                        2020-1-1<br>
+                        <small>テストイベント</small>
+                        <p>参加費　¥ 500-1000</p>
+                    </div>
+                    <div class="li-link"><a href="#">メモ</a></div>
+                </li>
+                <li>
+                    <div class="li-title">
+                        2020-1-1<br>
+                        <small>テストイベント</small>
+                        <p>参加費　¥ 500-1000</p>
+                    </div>
+                    <div class="li-link"><a href="#">メモ</a></div>
+                </li>
+            </ul>
+        </div>
+
+        <footer class="_hide-tablet _hide-desktop _hide-widescreen">
+            <div class="tab" style="display: flex;">
+                <button style="flex: 1;" class="tablinks" onclick="opentab('tab1')">メモしたイベント</button>
+                <button style="flex: 1;" class="tablinks" onclick="opentab('tab2')">全てのイベント</button>
+            </div>
+        </footer>
+        
+
+        <script src="../js/beauter.js"></script>
+    </body>
+</html>

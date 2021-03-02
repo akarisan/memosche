@@ -1,0 +1,167 @@
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-bottom: 10px;
+}
+.card {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+}
+.card-event {
+    flex: 1;
+    padding: 10px;
+}
+.card-link {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 100%;
+}
+.card-a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex: 1;
+    display: block;
+    writing-mode: vertical-rl;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.card-a:hover {
+    opacity: 0.6;
+}
+.card-a._delete {
+    background-color: indianred;
+    color: white;
+    font-size: 30px;
+    padding-right: 0;
+}
+.card-over-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.card-over-link:hover {
+    transition: 0.3s ease;
+    background-color: rgba(0,255,0,0.2);
+}
+.card-title {
+    font-size: 20px;
+    line-height: 1;
+    color: dimgray;
+    margin-bottom: 10px;
+}
+.card-title small {
+    font-size: 75%;
+}
+.card p {
+    line-height: 1;
+    margin: 0;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 0 auto;
+}
+ul li {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    border-radius: 5px;
+    display: inline-flex;
+    box-shadow: 0px 5px 10px lightgray;
+    border-left: 10px #90ee90 solid;
+}
+ul li .li-title {
+    flex: 2;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: dimgray;
+}
+ul li .li-title small {
+    font-size: 75%;
+}
+ul li .li-title p {
+    font-size: 12px;
+    margin: 10px 0 0 0;
+}
+ul li .li-link {
+    position: relative;
+    width: 70px;
+    height: 100%;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    background-color: #90ee90;
+}
+ul li .li-link a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 35%;
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul li .li-link a:hover {
+    opacity: 0.6;
+}
+
+ul li.selected {
+    border-color: lightgray;
+    background-color: whitesmoke;
+}
+ul li.selected .li-link {
+    background-color: lightgray;
+}
+ul li.selected .li-link a {
+    color: gray;
+}
+
+footer.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body.fixed {
+    margin-bottom: 70px;
+}
+
+.form-radio input[type=radio] {
+    display: none;
+}
+input[type=radio] ~ label.radio-label {
+    width: auto;
+    display: inline-block;
+    float: left;
+    font-weight: normal;
+    padding: 10px 40px;
+    margin: 0px;
+    border: 0.5px dimgray solid;
+}
+input[type=radio]:checked ~ label.radio-label {
+    background-color: deepskyblue;
+    color: whitesmoke;
+    font-weight: bold;
+}

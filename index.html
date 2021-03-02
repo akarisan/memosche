@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>めもすけ</title>
+        <link rel="stylesheet" href="css/beauter.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header class="jumbo _indigo">
+            <h1>MemoSche</h1>
+            <p>気になるイベントをまとめよう</p>
+        </header>
+        
+        <div class="container">
+            <h4>MemoScheとは？</h4>
+            <p>
+                「気になっていたイベントの申込締切が過ぎていた」<br>
+                そんなことありませんでしたか？
+            </p>
+            <p>
+                各イベントのWebサイトに飛ばないと、締切日が分からない。<br>
+                自分の気になっているイベントを一目で分かるようにしたい。
+            </p>
+            <p>自分の気になるイベントをまとめて、詳細情報を一括管理できるイベントスケジュールのメモ帳です。</p>
+            <h5 class="_alignCenter">もう申込締切日を逃さない</h5>
+        </div>
+        <div class="jumbo _info">
+            <h4><small>Twitter版</small><br>今すぐメモしよう</h4>
+            <div class="container _alignLeft">
+                <form action="php/userSessionTwitter.php" method="post">
+                    <fieldset>
+                        <legend>新規登録またはログイン</legend>
+                        <input id="twitter" name="twitter" type="text" class="_width75" placeholder="@iroharori_work" required>
+                        <input type="submit" class="button _indigo _width25" value="めもすけを始める">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="jumbo _cream">
+            <hr>
+            <h4><small>Email版</small><br>今すぐメモしよう</h4>
+            <div class="container _alignLeft">
+                <form action="php/userSessionEmail.php" method="post">
+                    <fieldset>
+                        <legend>新規登録またはログイン</legend>
+                        <input id="email" name="email" type="email" class="_width75" placeholder="example@irohaori.work" required>
+                        <input type="submit" class="button _primary _width25" value="めもすけを始める">
+                    </fieldset>
+                </form>
+            </div>    
+        </div>
+        
+        
+        <footer class="jumbo _indigo">
+            <p>&copy;2019-2020 MemoSche by <a href="https://irohaori.work" target="_blank">irohaori work</a></p>
+        </footer>
+        
+        <script src="js/beauter.js"></script>
+    </body>
+</html>
